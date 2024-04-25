@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-end -->
+    <!-- icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- end -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- css-link end -->
+  </head>
+  <body>
+    <div class="audio-player">
+      <audio
+        src="./assets/audios/yt1s.com - anna RF  Days and Nights UZUN İNCE BİR YOLDAYIM.mp3"
+      ></audio>
+      <div class="music">
+        <img
+          src="./assets/images/maxresdefault.jpg"
+          alt=""
+          class="cover-photo"
+        />
+
+        <div class="music-information">
+          <p class="singer">anna RF</p>
+          <marquee class="music-info-active" direction="right"></marquee>
+        </div>
+      </div>
+      <div class="time-info" >
+        <input type="range" id="scrollbar" min="0" max="500" value="0" />
+        <span class="currentTime">00:00</span>
+      </div>
+      <div class="controller">
+        <button class="back">
+          <i class="fa-solid fa-backward control-icon"></i>
+        </button>
+        <button class="play">
+          <i class="fa-solid fa-play control-icon"></i>
+        </button>
+        <button class="stop">
+          <i class="fa-solid fa-pause control-icon"></i>
+        </button>
+        <button class="forward">
+          <i class="fa-solid fa-forward control-icon"></i>
+        </button>
+      </div>
+      <div class="album" >
+        <!-- <div class="album-box">
+          <div class="album-elements">
+            <img
+              src="https://images.genius.com/4a72a5ab6f3acf96bf26fd66385670d1.1000x1000x1.jpg"
+              alt=""
+              class="album-image"
+            />
+            <p class="album-item-singer">Xpert</p>
+            
+          </div>
+          <div class="album-elements">
+            <p class="album-item-song">Sayrışan Hallar</p>
+            <p class="time">04:10</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="./data.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
